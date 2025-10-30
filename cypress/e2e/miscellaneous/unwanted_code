@@ -1,0 +1,30 @@
+/*
+    if (cy.get('#SubmitOnroadPriceForm').click({force: true})){
+
+        cy.get('.thankscustomModal-header > .modalHeading').should('have.text','Thank You!!!');
+    }
+     else {
+        cy.get('.thankscustomModal-header > .modalHeading').should('not.be.visible');
+     }
+*/
+/*
+   if (cy.get('#SubmitDealerLead').click()){
+
+    cy.xpath("//div//strong[text()='Success']").should('have.text','Success');
+}
+ else {
+    cy.xpath("//div[@class='toast-header bg-danger text-white']//strong[text()='Error']").should('not.be.visible');
+ }
+ */
+
+ //cy.get('#sellerdetailsubmission > .modal-dialog > .modal-content > .customModal-header > .modalHeading').should('have.text','Thank you for contact');
+
+ //  cy.wait(3000);
+    //cy.get('.floatingMobile-left > .fillBtn').click();
+    //cy.wait(2000);
+    //cy.get('#SubmitOnroadPriceForm').click();
+    //cy.wait(3000);
+    //cy.get('.col-12.d-flex > .fillBtn').click();
+    //cy.get('#SubmitOnroadPriceForm').click();
+
+     //cy.get('#sellerdetailsubmission > .modal-dialog > .modal-content > .customModal-header > .modalHeading').should('not.equal','exist');
