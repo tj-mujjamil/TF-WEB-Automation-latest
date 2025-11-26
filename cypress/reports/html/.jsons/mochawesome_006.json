@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-10-31T09:30:55.430Z",
+    "end": "2025-10-31T09:31:26.741Z",
+    "duration": 31311,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ee0d899a-f28b-4b17-b9e2-0b2c85fb130b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test_Case\\InflowOutflow.cy.js",
+      "file": "cypress\\e2e\\Test_Case\\InflowOutflow.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "InflowOutflow",
+          "fullTitle": "InflowOutflow",
+          "timedOut": null,
+          "duration": 28554,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Test_Case\\\\InflowOutflow.cy.js\\\\InflowOutflow (failed).png\"\n    ]\n  ]\n}",
+          "code": "cy.clearAllCookies();\ncy.visit(\"https://t3finj.tractorfirst.com/\");\nconst mobile = '8005566027';\nconst otp = ['1', '2', '3', '4', '5', '6'];\ncy.loginWithOTP(mobile, otp);\n_lnflowOutflowPage.default.InflowProcess1();\n_lnflowOutflowPage.default.InflowProcess2();",
+          "err": {
+            "message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click",
+            "estack": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n\nhttps://on.cypress.io/click\n    at mouseAction (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:113980:68)\n    at Context.click (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114147:14)\n    at wrapped (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:141532:19)\nFrom Your Spec Code:\n    at InflowOutflowPage.InflowProcess2 (webpack://cypress/./cypress/e2e/Page_object_model/lnflowOutflowPage.js:13:28)\n    at Context.eval (webpack://cypress/./cypress/e2e/Test_Case/InflowOutflow.cy.js:15:26)",
+            "diff": null
+          },
+          "uuid": "08e0aea2-dfcf-451b-84f5-3b2c216f05f7",
+          "parentUUID": "ee0d899a-f28b-4b17-b9e2-0b2c85fb130b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "08e0aea2-dfcf-451b-84f5-3b2c216f05f7"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 28554,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

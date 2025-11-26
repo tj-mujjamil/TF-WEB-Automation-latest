@@ -7,9 +7,9 @@
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-slow-down": "^1.3.1",
-    "mochawesome": "^7.1.3",
+    "mochawesome": "^7.1.4",
     "mochawesome-merge": "^5.0.0",
-    "mochawesome-report-generator": "^6.2.0",
+    "mochawesome-report-generator": "^6.3.0",
     "sonarqube-scanner": "^4.2.3"
   },
   "name": "cypress",

@@ -1,0 +1,29 @@
+{
+    "baseUrl": "https://dev.finj.in/",
+    "endpoints": [
+        "used-vehicle-loan/commercial-vehicle",
+        "used-vehicle-loan/construction-equipment",
+        "used-vehicle-loan/car",
+        "used-vehicle-loan/tractor",
+        "used-vehicle-loan/harvester",
+        "vehicle-loan/commercial-vehicle",
+        "vehicle-loan/construction-equipment",
+        "vehicle-loan/car",
+        "vehicle-loan/tractor",
+        "vehicle-loan/bike",
+        "vehicle-loan/harvester",
+        "loans",
+        "vehicle-loan",
+        "used-vehicle-loan",
+        "personal-loan",
+        "loan-against-property",
+        "msme-loan",
+        "emi-calculator",
+        "bt-calculator",
+        "partner-onboarding",
+        "about",
+        "contact",
+        "terms-service",
+        "privacy-policy"
+    ]
+}

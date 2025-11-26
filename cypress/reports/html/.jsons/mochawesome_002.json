@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-10-31T09:28:11.398Z",
+    "end": "2025-10-31T09:28:38.850Z",
+    "duration": 27452,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4c1fd061-9806-487e-be7f-93df2307ee43",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test_Case\\CreateLead.cy.js",
+      "file": "cypress\\e2e\\Test_Case\\CreateLead.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "CreateLead",
+          "fullTitle": "CreateLead",
+          "timedOut": null,
+          "duration": 25052,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Test_Case\\\\CreateLead.cy.js\\\\CreateLead (failed).png\"\n    ]\n  ]\n}",
+          "code": "cy.clearAllCookies();\nconst mobile = '8005566027';\nconst otp = ['1', '2', '3', '4', '5', '6'];\ncy.loginWithOTP(mobile, otp);\n_CreateLeadPage.default.fillStep1Details();\n_CreateLeadPage.default.fillStep2Details();\ncy.get('.step-2 > :nth-child(2) > .form-control').type(\"100000\");\ncy.generateUniqueRegNo().then(uniqueRegNo => {\n  cy.get('.step-2 > .mt-1 > .form-control').type(uniqueRegNo);\n  // you can use `uniqueRegNo` in assertions, filters, etc. later\n});\n_CreateLeadPage.default.fillStep3Details();\n_CreateLeadPage.default.fillStep4Details();",
+          "err": {
+            "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<span class=\"select2-selection select2-selection--single\" role=\"combobox\" aria-haspopup=\"true\" aria-expanded=\"false\" tabindex=\"0\" aria-labelledby=\"select2-district_id-9m-container\">...</span>`\n\nis being covered by another element:\n\n`<li role=\"treeitem\" aria-live=\"assertive\" class=\"select2-results__option select2-results__message\">No resu...</li>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+            "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:\n\n`<span class=\"select2-selection select2-selection--single\" role=\"combobox\" aria-haspopup=\"true\" aria-expanded=\"false\" tabindex=\"0\" aria-labelledby=\"select2-district_id-9m-container\">...</span>`\n\nis being covered by another element:\n\n`<li role=\"treeitem\" aria-live=\"assertive\" class=\"select2-results__option select2-results__message\">No resu...</li>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at ensureIsDescendent (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114387:68)\n    at ensureDescendents (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114438:5)\n    at ensureDescendentsAndScroll (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114444:14)\n    at ensureElIsNotCovered (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114575:5)\n    at runAllChecks (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114774:52)\n    at retryActionability (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:114811:16)\n    at tryCatcher (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:147205:68)\n    at <unknown> (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:147146:14)\n    at tryCatcher (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://t3finj.tractorfirst.com/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at CreateLeadPage.fillStep1Details (webpack://cypress/./cypress/e2e/Page_object_model/CreateLeadPage.js:16:97)\n    at Context.eval (webpack://cypress/./cypress/e2e/Test_Case/CreateLead.cy.js:12:17)",
+            "diff": null
+          },
+          "uuid": "74feb07a-c812-473e-b659-6a1a88f7f874",
+          "parentUUID": "4c1fd061-9806-487e-be7f-93df2307ee43",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "74feb07a-c812-473e-b659-6a1a88f7f874"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 25052,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.0"
+    }
+  }
+}

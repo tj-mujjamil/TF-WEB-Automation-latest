@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-10-31T09:32:54.503Z",
+    "end": "2025-10-31T09:33:22.286Z",
+    "duration": 27783,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9313c9e-a52f-415e-b3d6-bd16b1809163",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test_Case\\Pre-Onboarding.cy.js",
+      "file": "cypress\\e2e\\Test_Case\\Pre-Onboarding.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Pre-Onboarding",
+          "fullTitle": "Pre-Onboarding",
+          "timedOut": null,
+          "duration": 25423,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.clearAllCookies();\ncy.visit(\"https://t3finj.tractorfirst.com/\");\nconst mobile = '8005566027';\nconst otp = ['1', '2', '3', '4', '5', '6'];\ncy.loginWithOTP(mobile, otp);\n_PreOnboardingPage.default.PreOnboardingName(\"Kamal\");\n_PreOnboardingPage.default.PreOnboardingMobilenumber();\n_PreOnboardingPage.default.PreOnboardingpartnerType();\n_PreOnboardingPage.default.PreOnboardingState();\n//PreOnboardingPage.PreOnboardingCluster_head();\n//PreOnboardingPage.PreOnboardingFieldOfficer();\n_PreOnboardingPage.default.PreOnboardingStatus();",
+          "err": {},
+          "uuid": "28aeab12-61ee-4602-ac34-9cdb9e46fec1",
+          "parentUUID": "f9313c9e-a52f-415e-b3d6-bd16b1809163",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "28aeab12-61ee-4602-ac34-9cdb9e46fec1"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 25423,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.0"
+    }
+  }
+}
