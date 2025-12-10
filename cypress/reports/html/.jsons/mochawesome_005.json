@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-10-31T09:30:27.809Z",
+    "end": "2025-10-31T09:30:52.803Z",
+    "duration": 24994,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "40f44c15-04ad-4fbf-b941-8dbc259d097c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test_Case\\Dashboard.cy.js",
+      "file": "cypress\\e2e\\Test_Case\\Dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Dashboard_filter",
+          "fullTitle": "Dashboard_filter",
+          "timedOut": null,
+          "duration": 23040,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Test_Case\\\\Dashboard.cy.js\\\\Dashboard_filter (failed).png\"\n    ]\n  ]\n}",
+          "code": "cy.clearAllCookies();\ncy.visit(\"https://t3finj.tractorfirst.com/\");\ncy.clearAllCookies();\nconst mobile = '8005566027';\nconst otp = ['1', '2', '3', '4', '5', '6'];\ncy.loginWithOTP(mobile, otp);\n_DashboardPage.default.daterange();\n_DashboardPage.default.selectThisYear();\n_DashboardPage.default.stateHead();\n_DashboardPage.default.ClusterHead();\n_DashboardPage.default.FieldOfficer();\n_DashboardPage.default.search();\n_DashboardPage.default.URLAssertion();\ncy.screenshot('full-page', {\n  capture: 'fullPage'\n});\ncy.screenshot();",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.applicationForm-inner > :nth-child(2) > .select2-container > .selection > .select2-selection`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.applicationForm-inner > :nth-child(2) > .select2-container > .selection > .select2-selection`, but never found it.\n    at DashboardPage.stateHead (webpack://cypress/./cypress/e2e/Page_object_model/DashboardPage.js:35:11)\n    at Context.eval (webpack://cypress/./cypress/e2e/Test_Case/Dashboard.cy.js:15:16)",
+            "diff": null
+          },
+          "uuid": "734d434f-d6c3-444b-9cb7-71120a789d9e",
+          "parentUUID": "40f44c15-04ad-4fbf-b941-8dbc259d097c",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "734d434f-d6c3-444b-9cb7-71120a789d9e"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 23040,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "Cypress Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.0"
+    }
+  }
+}
